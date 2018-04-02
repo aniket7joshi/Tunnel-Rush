@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<style>
+#score {
+    color: red;
+    position: absolute;
+    left: 1490px;
+    top: 250px;
+}
+#Score {
+    color: red;
+    position: absolute;
+    left: 1375px;
+    top: 250px;   
+}
+#level {
+    color: red;
+    position: absolute;
+    left: 1490px;
+    top: 300px;
+}
+#Level {
+    color: red;
+    position: absolute;
+    left: 1375px;
+    top: 300px;   
+}
+#collide {
+    color: red;
+    position: absolute;
+    left: 1675px;
+    top: 400px;
+}
+#Collide {
+    color: red;
+    position: absolute;
+    left: 1375px;
+    top: 400px;   
+}
+#avoid {
+    color: red;
+    position: absolute;
+    left: 1675px;
+    top: 350px;
+}
+#Avoid {
+    color: red;
+    position: absolute;
+    left: 1375px;
+    top: 350px;   
+}
+#speed {
+    color: red;
+    position: absolute;
+    left: 1490px;
+    top: 450px;
+}
+#Speed {
+    color: red;
+    position: absolute;
+    left: 1375px;
+    top: 450px;   
+}
+</style>
+  <head>
+    <meta charset="utf-8">
+    <title>WebGL Demo</title>
+    <link rel="stylesheet" href="../webgl.css" type="text/css">
+  </head>
+
+  <body>
+    <canvas id="glcanvas" width="1280" height="720"></canvas>
+    <audio src = './sound.m4a' id = "music" loop></audio>
+    <audio src = './crassh.opus' id = "crash"></audio>
+    <h1 id = "Score">Score: </h1>
+    <h1 id = "score"></h1>
+    <h1 id = "Level">Level: </h1>
+    <h1 id = "level"></h1>
+    <h1 id = "Avoid">Avoided Blocks: </h1>
+    <h1 id = "avoid"></h1>
+    <h1 id = "Collide">Collided Blocks: </h1>
+    <h1 id = "collide"></h1>
+    <h1 id = "Speed">Speed: </h1>
+    <h1 id = "speed"></h1>
+  </body>
+  <script src="./scripts/mousetrap.min.js"></script>
+  <script src="./gl-matrix.js"></script>
+  <script src="./tunnel.js" ></script>
+  <script src="./obstacles.js" ></script>
+
+  <script src="./main.js" ></script>
+
+</html>
